@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    background: rgb(0, 0,0);
+    color: white;
+    font-family:"Roboto", sans-serif ;  
+}
+
+.header h1{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: linear-gradient( to top , #000dff, #ff00e6, #ff7700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.mail-image{
+    width: 80px;
+    height: 80px;
+}
+
+.mail-section{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+}
+
+.phone-image{
+    width: 70px;
+    height: 70px; 
+}
+
+.phone-section{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px;
+    gap: 15px;
+}
+
+.location-image{
+    width: 70px;
+    height: 70px; 
+}
+
+.location-section{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px;
+    gap: 15px;
+}
+
+.icons-part{
+    margin-top: 60px;
+}
+
+.lets-talk h1{
+    background: linear-gradient( to top , #000dff, #ff00e6, #ff7700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.lets-talk p{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+.form-container h2 {
+    background: linear-gradient( to top , #000dff, #ff00e6, #ff7700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color:white;
+    margin-top: 20px;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+#formMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+    margin-top: 100px;
+}
