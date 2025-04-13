@@ -1,54 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box; /* Ensures consistent box sizing */
 }
 
-
-body{
-    background: rgb(0, 0,0);
+body {
+    background: rgb(0, 0, 0);
     color: white;
-    font-family:"Roboto", sans-serif ;  
+    font-family: "Roboto", sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
-  
+    flex-direction: column;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    min-height: 100vh; /* Ensure the body covers full viewport height */
+    padding: 20px;
+    text-align: center; /* Center-align text content */
 }
-.header h1{
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header h1 {
     font-size: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    background: linear-gradient( to top , #000dff, #ff00e6, #ff7700);
+    background: linear-gradient(to top, #000dff, #ff00e6, #ff7700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 20px;
     text-decoration: none;
-    }
 
-.header p{
+}
+
+
+.header p {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #b0b0b0; /* Subtle gray color for text */
+    transition: color 0.3s ease;
+}
+
+.header p:hover {
+    color: white; /* Hover effect on text */
+}
+
+.second-part {
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
 }
 
 .second-part h2 {
     font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    background: linear-gradient( to top , #000dff, #ff00e6, #ff7700);
+    background: linear-gradient(to top, #000dff, #ff00e6, #ff7700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
 }
 
-.images{
-    width: 500px;
-    height: 300px;
-    padding-right: 40px;
-    margin-top: 40px;
+.certificate-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.images {
+    width: 300px; /* Adjusted image size for better layout */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effect */
+    border: 2px solid #ff7700; /* Border color to match the gradient theme */
+    margin-top: 20px;
+}
+
+.images:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Shadow intensifies on hover */
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 45px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .second-part h2 {
+        font-size: 30px;
+    }
+
+    .certificate-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images {
+        width: 250px;
+        height: 180px;
+    }
 }
