@@ -132,3 +132,107 @@ body{
     gap: 500px;
     margin-top: 100px;
 }
+@media (max-width: 1024px) {
+    .contact {
+      gap: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 40px;
+      text-align: center;
+      margin: 20px 10px;
+    }
+  
+    .lets-talk h1 {
+      font-size: 35px;
+      text-align: center;
+    }
+  
+    .lets-talk p {
+      font-size: 18px;
+      padding: 0 10px;
+      text-align: center;
+    }
+  
+    .form-container h2 {
+      font-size: 35px;
+      text-align: center;
+    }
+  
+    .form-container label {
+      font-size: 18px;
+    }
+  
+    .form-container input,
+    .form-container textarea {
+      font-size: 18px;
+      padding: 8px;
+    }
+  
+    .form-container button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .contact {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      margin-top: 50px;
+    }
+  
+    .mail-image,
+    .phone-image,
+    .location-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .mail-section,
+    .phone-section,
+    .location-section {
+      gap: 10px;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 30px;
+    }
+  
+    .lets-talk h1 {
+      font-size: 28px;
+    }
+  
+    .lets-talk p {
+      font-size: 16px;
+    }
+  
+    .form-container h2 {
+      font-size: 28px;
+    }
+  
+    .form-container label {
+      font-size: 16px;
+    }
+  
+    .form-container input,
+    .form-container textarea {
+      font-size: 16px;
+    }
+  
+    .form-container button {
+      font-size: 13px;
+      padding: 6px 14px;
+    }
+  
+    .contact {
+      gap: 30px;
+    }
+  }
+  

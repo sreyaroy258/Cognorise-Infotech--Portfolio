@@ -95,3 +95,65 @@ text-decoration: none;
    
 }
 
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      gap: 20px;
+      align-items: flex-start;
+    }
+  
+    .menu {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+  
+    .menu li {
+      font-size: 1rem;
+      text-align: left;
+    }
+  
+    .btn1 {
+      padding: 8px 20px;
+      font-size: 1rem;
+      margin-top: 10px;
+      align-self: flex-start;
+    }
+  
+    .text1 {
+      font-size: 2rem;
+      text-align: center;
+      padding: 0 10px;
+    }
+  
+    .main-area {
+      justify-content: center;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.5rem;
+    }
+  
+    .text1 {
+      font-size: 1.5rem;
+    }
+  
+    .btn1 {
+      padding: 6px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .menu {
+      gap: 15px;
+    }
+  
+    .menu li {
+      font-size: 0.95rem;
+    }
+  }
+  
